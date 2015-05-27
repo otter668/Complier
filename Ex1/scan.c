@@ -1,9 +1,11 @@
-//Copyright (c) 2015, Department of computer science and software engineering @ Ahpumec
-//Filename : scan.c
-//Description : scan a source file by character
-//Version : 1.2
-//Author : Gaochao
-//Date : 2015.5.4
+/*
+ * Copyright (c) 2015 AHPUMEC. All rights reserved.
+ * Created by GaoChao <chaogao@ahpumec.edu.cn>.
+ * Filename : scan.c
+ * Description : scan a source file by character
+ * Version : 2.0
+ */
+ 
 #include <stdio.h>
 #include <stdlib.h>
 
