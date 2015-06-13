@@ -28,7 +28,7 @@ void ExitWithStop(int erno)
 }
 
 void Push(char ch) {
-    if (stack_ptr<100) {
+    if (stack_ptr<50) {
         stack[++stack_ptr] = ch;
     }
     else {
@@ -49,20 +49,20 @@ char Pop() {
     return ch;
 }
 
-int GetCharInVt(char top) {
+int GetCharInVt(char curch) {
     int i;
     for (i = 0; i < 8; ++i) {
-        if (vt[i]==top) {
+        if (vt[i]==curch) {
             return i;
         }
     }
     return -1;
 }
 
-int GetCharInVn(char curch) {
+int GetCharInVn(char top) {
     int i;
     for (i = 0; i < 5; ++i) {
-        if (vn[i]==curch) {
+        if (vn[i]==top) {
             return i;
         }
     }
@@ -131,7 +131,7 @@ void InitializeTable() {
             table[i][j] = ele;
         }
     }
-    table[0][4] = table[0][6] = (table_e){'E', "TG", 2};
+    table[0][4]=table[0][6]=(table_e){'E', "TG", 2};
     table[1][4]=table[1][6]=(table_e){'T', "FS", 2};
     table[2][0]=(table_e){'G', "+TG", 3};
     table[2][1]=(table_e){'G', "-TG", 3};
