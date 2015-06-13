@@ -10,3 +10,5 @@ A lexical analyzer
 Recursive-descent parsing
 ##Ex4
 LL(1) parsing
+##Ex5
+SLR(1) parsing
